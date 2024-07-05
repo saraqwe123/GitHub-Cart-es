@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
-    <script src="javascript.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../controle.js" defer></script>
 </head>
 
 <body class="flex justify-start items-start h-screen">
-    <div class="flex flex-col ml-[10%] mt-[5%] h-screen">
+    <div class="flex flex-col ml-[10%] mt-[5%] h-screen ">
         <header>
             <label for="usuario" class="text-lg">Usuário GitHub</label>
             <input type="text" id="iusuario" name="usuario" placeholder="usuário" class="bg-gray-300 min-h-[95%] min-w-[20%]">
             <button id="botao" class="bg-purple-500 text-white h-10 w-20 rounded-lg" >Adicionar</button>
         </header>
         <div class="flex flex-col justify-start items-center corpo mt-4 border shadow-md rounded-lg min-w-[50%] h-3/4">
-            <img src="https://conteudo.imguol.com.br/c/noticias/1c/2022/05/24/imagem-criada-no-imagen-prototipo-do-google-que-cria-imagens-baseadas-em-texto-neste-caso-um-cachorro-corgi-andando-de-bicicleta-na-times-square-usando-oculos-de-sol-e-chapeu-de-praia-1653397634334_v2_900x506.jpg" alt="" class="w-[100%] h-[30%] rounded-lg">
-            <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01-domesticated-dog.jpg?w=760&h=507" alt="" class="w-[24%] h-[20%] rounded-b-full rounded-t-full">
-            <p class="" id="nome">Nome</p>
-            <p class="" id="email">@@@@@@@@@@</p>
-            <ul id="repositorio" class="absolute bottom-[30%]">
-                <li>repositório</li>
+            <img id="ifoto2" src="https://conteudo.imguol.com.br/c/noticias/1c/2022/05/24/imagem-criada-no-imagen-prototipo-do-google-que-cria-imagens-baseadas-em-texto-neste-caso-um-cachorro-corgi-andando-de-bicicleta-na-times-square-usando-oculos-de-sol-e-chapeu-de-praia-1653397634334_v2_900x506.jpg" alt="" class="w-[100%] h-[30%] rounded-lg">
+            <img id="ifoto1" src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01-domesticated-dog.jpg?w=760&h=507" alt="Avatar" class="w-[24%] h-[20%] rounded-b-full rounded-t-full">
+            <p class="" id="inome">nome</p>
+            <p class="" id="iemail">email</p>
+            <ul id="iul" class="absolute bottom-[30%]">
+                <li></li>
             </ul>
         </div> 
     </div>
