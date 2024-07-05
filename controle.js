@@ -8,7 +8,7 @@ let imagem_fundo = document.getElementById("ifoto2");
 async function acha_perfil() {
   try {
     const response = await axios.get(
-      `https://api.github.com/users/${usuario.value}`
+       `https://api.github.com/users/${usuario.value}`
     );
     console.log(response.data);
     let informacoes = response.data;
@@ -31,11 +31,11 @@ async function acha_perfil() {
       li.textContent = repositorios[i].name;
       ul.appendChild(li);
       li.style.border = "1px solid black";
-      ul.style.height = "15%";
+      ul.style.height = "20%";
       ul.style.overflowY = "auto";
       ul.style.width = "70%";
       ul.style.position = "relative";
-      ul.style.top = "20%";
+      ul.style.top = "5%";
     }
   } catch (error) {
     console.error("Perfil não encontrado:", error);
